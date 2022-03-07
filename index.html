@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel ="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div id = 'topbar'>
+	<p> привет, я-Стив!Приветствую тебя на моем сайте! </p>
+	</div>
+
+	<div id = 'mainsection'>
+		<p> Кто я?: игрок в minecraft </p>
+		<p> Что я делаю?: строю крутые здания в игре </p>
+		<p> Больше всего я люблю: добывать алмазы </p>
+	</div>
+	
+	<div id= loop-section>
+	<button id= 'mainbutton' type='button' oneclick = explore()>Поехали!</button>
+	</div>
+	
+
+</body>
+
+	
+<div>
+<img id ='steve' src='steve.jpg'/>
+
+
+<body>
+
+<html>
+
+<script>
+
+	function sayHello(){
+		var name= prompt("Привет, как тебя зовут?");
+		if(name !==null){
+			window.alert("Я рад познакомится с тобой, "+name+"! Спасибо, что заглянул на сайт!");
+		}
+	}
+
+</script>
+
+</html>
+
+</body>
+
+
+
+<p>
+<button id='mainbutton' type='button' onclick = sayHello()>Поздороваться!</button>
+</p>
+
+
+<script>
+
+function explore() {
+
+	var locations = ['старый старый замок','деревня',' храм в лесу',' глубокая темная пещера',' крутая пирамида'];
+	var items = ['алмаз',' тыква',' золотое яблоко','крипер','стаи мышей','сокровище','кольчужные кирасы','кусок угля'];
+	
+}
+
+
+var chosenLocation = location[Math.floor(Math.random()*location.lenght)];
+
+document.getEIementById("loop-section").innerHTML = "";
+
+$('#loop-section')/append("<p>Я пошёл куда глаза глядят и встретил"+chosenLocation+". Внутри я нашёл: </p>
+
+
+for (i = 1; i < 4: i++) {
+
+	var foundItem = items[Math.floor(Math.random()*items.lenght)];
+	
+	$('#loop-section').append("<p>"+foundItem+", </p>");
+}
+
+
+if(i=3){
+	$('#loop-section').append("<p>и "+foundItem+"</p>");
+}else{
+	$('#loop-section').append("<p>"+foundItem+", </p>");
+}
+</script>
+
